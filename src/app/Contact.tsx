@@ -18,7 +18,7 @@ export default function ContactPage() {
       <div className="absolute inset-0 -z-10 "></div>
       <h1 className="text-3xl md:text-4xl font-bold mb-8">Anything?</h1>
       <div className="h-full">
-        <div className="max-w-5xl mx-auto px-8 mt-10">
+        <div className="max-w-5xl mx-auto px-8">
           <motion.div
             ref={ref}
             className="h-full flex justify-center"
