@@ -27,14 +27,14 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-gray-200 bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-sm block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -67,7 +67,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full overflow-hidden bg-gray-50 relative group/card bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-sm border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 flex items-center justify-center",
+        "rounded-2xl h-full w-full overflow-hidden bg-gray-50 relative group/card bg-white/20 shadow-lg ring-1 ring-black/5 backdrop-blur-sm border border-transparent border-white/[0.2] group-hover:border-slate-100 relative z-20 flex items-center justify-center",
         className
       )}
     >
@@ -85,7 +85,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-white font-bold tracking-widest p-2", className)}>
+    <h4
+      className={cn(
+        "text-white font-bold tracking-widest p-2 group-hover:text-black",
+        className
+      )}
+    >
       {children}
     </h4>
   );
