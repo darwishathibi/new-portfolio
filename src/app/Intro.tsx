@@ -41,7 +41,7 @@ export default function IntroPage() {
               >
                 About Me
               </p>
-              <p className="text-xs lg:text-lg">
+              <p className="text-sm lg:text-lg">
                 a network security student from IIUM, Malaysia. Passionate about
                 tech and photography. I enjoy developing software, solving
                 complex problems, and continually expanding my skills and

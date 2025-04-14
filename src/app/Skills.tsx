@@ -2,7 +2,7 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 export default function SkillsPage() {
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
+    <div className="relative z-10 flex flex-col items-center justify-center text-white mt-48">
       <div className="absolute inset-0 -z-10 "></div>
       <h1 className="text-3xl md:text-4xl font-bold mb-8">
         I have this!

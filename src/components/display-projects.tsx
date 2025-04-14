@@ -53,7 +53,7 @@ export default function DisplayProjects() {
             <CardItem
               as="p"
               translateZ="60"
-              className="text-xs lg:text-sm max-w-sm mt-2"
+              className="text-sm lg:text-sm max-w-sm mt-2"
             >
               {post.desc}
             </CardItem>
