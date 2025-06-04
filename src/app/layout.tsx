@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono } from "next/font/google";
 import GradientLayout from "@/components/background-layout";
+import {WavyBackground} from "@/components/ui/wavy-background";
 import "./globals.css";
 
 const shareTechMono = Share_Tech_Mono({

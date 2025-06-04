@@ -1,10 +1,18 @@
-
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { Doto } from "next/font/google";
+
+const doto = Doto({
+  weight: "400",
+  variable: "--font-doto",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function SkillsPage() {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center text-white mt-48">
       <div className="absolute inset-0 -z-10 "></div>
-      <h1 className="text-3xl md:text-4xl font-bold mb-8">
+      <h1 className={`text-3xl md:text-4xl font-bold mb-8 ${doto.className}`}>
         I have this!
       </h1>
       <div className="h-full">

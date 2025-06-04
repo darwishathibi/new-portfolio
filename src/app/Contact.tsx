@@ -2,6 +2,14 @@
 import DrawOutlineButton from "@/components/ui/draw-outline-button";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Doto } from "next/font/google";
+
+const doto = Doto({
+  weight: "400",
+  variable: "--font-doto",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function ContactPage() {
   const [ref, inView] = useInView({
@@ -16,7 +24,7 @@ export default function ContactPage() {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
       <div className="absolute inset-0 -z-10 "></div>
-      <h1 className="text-3xl md:text-4xl font-bold mb-8">Anything?</h1>
+      <h1 className={`text-3xl md:text-4xl font-bold mb-8 ${doto.className}`}>Anything?</h1>
       <div className="h-full">
         <div className="max-w-5xl mx-auto px-8">
           <motion.div
