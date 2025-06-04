@@ -10,7 +10,7 @@ const doto = Doto({
 });
 
 export default function IntroPage() {
-  const texts = ["Coding", "Sleep", "Coffee", "Repeat"];
+  const texts = ["Coding", "Sleep", "Coffee", "Repeat" ];
 
   return (
     <div className="flex flex-col items-center justify-center h-screen text-white p-4 sm:p-8">
