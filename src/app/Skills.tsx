@@ -9,6 +9,7 @@ const doto = Doto({
 });
 
 export default function SkillsPage() {
+
   return (
     <div className="relative z-10 flex flex-col items-center justify-center text-white mt-48">
       <div className="absolute inset-0 -z-10 "></div>
